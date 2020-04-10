@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVA</title>
+    <link rel="icon" href="imagenes/Mi logo/logo-final-200.png" type="image/icon type">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plantillaLibros.css">
+</head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="Stars/css/starrr.css" rel=stylesheet/>
+<script src="Stars/js/starrr.js"></script>
+
+<body>
+    <header class="nav">
+            <img class="imgnav" src="imagenes/Mi logo/logo-final-200.png">
+            <div class="container">
+                <h3 id="h3">
+                    Biblioteca digital Alejandro
+                </h3>
+
+            </div>
+            <div class="justify-content-end">
+                <span>
+                    <a class="binicio" href="pagPrincipal.html">Inicio</a> 
+                </span>
+                <span>
+                    <a class="binicio" href="catalogo.html">Catalogo</a>
+                </span>
+            </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class=" container cuerpo col-11 col-sm-10 col-md-10 col-lg-10">
+        <div class="container autor2">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-11 col-md-9 col-lg-6 autor">
+                    <p> <b class="b">T&iacute;tulo:</b>  El monje</p>
+                    <p> <b class="b">Autor:</b> Manuel Alejandro Echavarria Taveras</p>
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-5 col-sm-12 col-md-12">
+            <div class="container ">
+                <div class="row">
+                    <div class=" d-flex justify-content-center  justify-content-center col-xs-12 col-sm-12 col-md-12">
+                        <div class="card col-xs-12 col-sm-12 col-md-12" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img class="imgc" src="imagenes/catalogo/catalogo9.JPG" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title resena">Rese&ntilde;a</h5>
+                                    <p class="card-text texto1">
+                                        This is a wider card with supporting text      below as a natural lead-in to additional content. This content is a little bit longer.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam sit alias rem, in, iure unde est necessitatibus dicta laborum aspernatur veniam harum. Quidem, sed minus. Nostrum in reprehenderit optio!
+                                    </p>
+                                    <p class="card-text texto1">
+                                        This is a wider card with supporting text      below as a natural lead-in to additional content. This content is a little bit longer.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam sit alias rem, in, iure unde est necessitatibus dicta laborum aspernatur veniam harum. Quidem, sed minus. Nostrum in reprehenderit optio!
+                                    </p>
+                                    <div class="btn">
+                                        <button class="button">
+                                            <a href="libros/Introducción a css Eva.pdf" target="blank">
+                                                Ver libro
+                                            </a>
+                                        </button>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            Last updated 1 year ago
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container comentario2">
+            <div class="row justify-content-center">
+                <div class=" autor2 col-11 col-sm-11 col-md-9 col-lg-6">
+                    <div class="comentario">
+                        <p>D&eacute;janos un comentario<hr width="100%"></p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control cuadroc" placeholder="Agrega un comentario" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                              <button class="btn boton btn-outline-secondary" type="button" id="button-addon2">Agregar</button>
+                            </div>
+                        </div>
+                        <div class="estrella">
+                            </p>
+                            <hr/>
+                            Calificar: <span id="Estrellas"></span>
+                            <hr/>
+                            <p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer container ">
+            <p>
+                2020 &copy; Bilioteca virtual Alejandro
+            </p>
+        </div>
+    </footer>
+    <script>
+        $('#Estrellas').starrr({
+            rating:0,
+            change:function(e,valor){
+                alert(valor);
+                
+            }
+            
+        });
+         
+         </script>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
